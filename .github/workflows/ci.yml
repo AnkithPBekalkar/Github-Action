@@ -11,10 +11,8 @@ jobs:
     steps:
     - name: Checkout Repository Code
       uses: actions/checkout@v4
-      
+
     - name: Run a Simple Test Check
       run: |
         echo "Running automated validation..."
-        node -v
-        npm --version
-        echo "Tests passed successfully!"
+        exit 1
